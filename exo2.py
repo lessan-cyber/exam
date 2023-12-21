@@ -4,3 +4,7 @@ for element in liste:
         print(element)
     else:
         print("not a string")
+
+with open("exo2.json", "x") as f:
+    json.dump(liste, f)
+    f.seek(0)
